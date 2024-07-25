@@ -1,0 +1,3 @@
+ProductDetail/Images (Viewcomponentler bozuk)
+ProductDetail/Comments (Viewcomponentler bozuk)
+ProductDetial/AddComment (Comments Çalýþmýyor)

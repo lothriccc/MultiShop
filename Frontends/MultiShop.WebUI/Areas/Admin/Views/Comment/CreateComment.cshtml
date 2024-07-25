@@ -1,0 +1,48 @@
+﻿@model CreateCommentDto
+@{
+    ViewData["Title"] = "CreateComment";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <h4>Yorum Ekleme Sayfası</h4>
+                <br />
+                <div class="bs-example" data-example-id="bordered-table">
+                    <form method="post">
+
+                 
+                        <br />
+                        <label>Ürün ID</label>
+                        <input type="text" class="form-control" asp-for="ProductID" />
+                        <br />
+                        <label>Adı Soyadı</label>
+                        <input type="text" class="form-control" asp-for="NameSurname" />
+                        <br />
+                        <label>Mail</label>
+                        <input type="text" class="form-control" asp-for="Email" />
+                        <br />
+                        <label>Oluşturulma Tarihi</label>
+                        <input type="text" class="form-control" asp-for="CreatedDate" />
+                        <br />
+
+                        <label>Yorum İçeriği</label>
+                        <textarea rows="2 " class="form-control" asp-for="CommentDetail"></textarea>
+                        <br />
+                        <label>Görsel Url</label>
+                        <input type="text" class="form-control" asp-for="ImageUrl" />
+                        <br />
+                        <label>Durum</label>
+                        <input type="text" class="form-control" asp-for="Status" />
+                        <br />
+                        <button class="btn btn-primary">Yorumu Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+

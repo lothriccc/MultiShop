@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "MultiShop.DtoLayer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51390;http://localhost:51392"
+    }
+  }
+}

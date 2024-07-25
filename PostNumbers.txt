@@ -1,0 +1,7 @@
+Catalog = http://localhost:7070
+Discount = http://localhost:7071
+Order = https://localhost:7072
+Cargo = https://localhost:7073
+Basket = https://localhost:7074
+IdentityServer = https://localhost:5001
+Ocelot = https://localhost:5000
