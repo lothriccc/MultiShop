@@ -24,7 +24,7 @@ namespace MultiShop.WebUI.Handlers
             var accesstoken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
             request.Headers.Authorization=new AuthenticationHeaderValue("Bearer",accesstoken);
            var response =await base.SendAsync(request, cancellationToken);
-            if (response.StatusCode == HttpStatusCode.Unauthorized)
+             if (response.StatusCode == HttpStatusCode.Unauthorized)
             {
                 var tokenResponse = await _identityService.GetRefreshToken();
                 if (tokenResponse != null)

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Multishop.Cargo.DataAccessLayer.Abstract
+namespace MultiShop.Cargo.DataAccessLayer.Abstract
 {
-	public interface IGenericDal<T> where T : class
-	{
-		void Insert(T entity);
-		void Update(T entity);
-		void Delete(int id);
-		T GetById(int id);
-		List<T> GetAll();
-	}
+    public interface IGenericDal<T> where T : class
+    {
+        void Insert(T entity);
+        void Update(T entity);
+        void Delete(int id);
+        T GetById(int id);
+        List<T> GetAll();
+    }
 }

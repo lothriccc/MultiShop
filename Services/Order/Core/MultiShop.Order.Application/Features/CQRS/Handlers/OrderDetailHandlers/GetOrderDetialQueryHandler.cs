@@ -22,11 +22,11 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers
 			var values=await _repository.GetAllAsync();
 			return values.Select(x=> new GetOrderDetailQueryResult
 			{
-				OrderDetailID= x.OrderDetailID,
+				OrderDetailId= x.OrderDetailId,
 				ProductAmount= x.ProductAmount,
-				OrderingID= x.OrderingID,
+				OrderingId = x.OrderingId,
 				ProductName= x.ProductName,
-				ProductID= x.ProductID,
+				ProductId= x.ProductId,
 				ProductPrice= x.ProductPrice
 			}).ToList();
 		}

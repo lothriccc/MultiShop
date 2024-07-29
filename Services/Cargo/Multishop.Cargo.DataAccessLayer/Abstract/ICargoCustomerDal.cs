@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Multishop.Cargo.DataAccessLayer.Abstract
+namespace MultiShop.Cargo.DataAccessLayer.Abstract
 {
-	public interface ICargoCustomerDal:IGenericDal<CargoCustomer>
-	{
-	}
+    public interface ICargoCustomerDal : IGenericDal<CargoCustomer>
+    {
+        CargoCustomer GetCargoCustomerById(string id);
+    }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultiShop.Cargo.EntityLayer.Concrete
 {
-	public class CargoCompany
-	{
-        public int CargoCompanyID { get; set; }
+    public class CargoCompany
+    {
+        public int CargoCompanyId { get; set; }
         public string CargoCompanyName { get; set; }
     }
 }
